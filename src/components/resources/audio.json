@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_resources_audio",
+  "info": {
+    "displayName": "audio",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "file": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "audios"
+      ]
+    },
+    "previewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "externalURL": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    }
+  }
+}

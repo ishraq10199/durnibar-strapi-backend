@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_digital_libraries",
+  "info": {
+    "singularName": "about-digital-library",
+    "pluralName": "about-digital-libraries",
+    "displayName": "AboutDigitalLibrary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forms",
+  "info": {
+    "singularName": "form",
+    "pluralName": "forms",
+    "displayName": "Form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "email"
+    },
+    "userPhoneNo": {
+      "type": "biginteger"
+    },
+    "userDistrict": {
+      "type": "string"
+    },
+    "userArea": {
+      "type": "string"
+    },
+    "mediaFile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "userStory": {
+      "type": "richtext",
+      "required": false
+    }
+  }
+}

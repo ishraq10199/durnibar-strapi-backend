@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resource_permissions",
+  "info": {
+    "singularName": "resource-permission",
+    "pluralName": "resource-permissions",
+    "displayName": "ResourcePermission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "allow_download": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "resource_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::resource-user.resource-user"
+    },
+    "resource_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::resource-item.resource-item"
+    }
+  }
+}

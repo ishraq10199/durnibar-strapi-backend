@@ -1,0 +1,99 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resource_items",
+  "info": {
+    "singularName": "resource-item",
+    "pluralName": "resource-items",
+    "displayName": "ResourceItem",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "resource": {
+      "type": "dynamiczone",
+      "components": [
+        "resources.audio",
+        "resources.audiovisual",
+        "resources.document"
+      ],
+      "required": false,
+      "max": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "regions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::region.region",
+      "inversedBy": "resource_items"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Laws and Rules",
+        "National Action Plan",
+        "Current Interventions",
+        "Social Change Materials",
+        "Existing Services"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "document",
+        "audio",
+        "audiovisual"
+      ],
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isHelplineResource": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "isInstitutionResource": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

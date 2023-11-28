@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_resources_documents",
+  "info": {
+    "displayName": "document",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "previewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "provider": {
+      "type": "string"
+    }
+  }
+}

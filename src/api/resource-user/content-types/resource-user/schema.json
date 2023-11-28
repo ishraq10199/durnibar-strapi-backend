@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resource_users",
+  "info": {
+    "singularName": "resource-user",
+    "pluralName": "resource-users",
+    "displayName": "ResourceUser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    }
+  }
+}
